@@ -6,7 +6,6 @@ public class Student {
     int age;
     float average;
     boolean approve;
-    int Student = 0;
 
     public Student(String name, int age, float average) {
         this.name = name;
@@ -15,7 +14,7 @@ public class Student {
     }
 
     public void mostrarDetalles() {
-        System.out.println((Student++)+ "- Name=" + name + ", Age=" + age + ", Average=" + average+".");   
+        System.out.println("Name=" + name + ", Age=" + age + ", Average=" + average+".");   
     }
 
     public void esAprobado(){

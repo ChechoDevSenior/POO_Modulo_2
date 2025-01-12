@@ -21,7 +21,6 @@ public class book {
         this.year = year;
         this.gender = gender;
         this.isBusy = isBusy;
-
     }
     public book(String title, String author, int year, String gender){
         this.title = title;

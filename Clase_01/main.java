@@ -9,7 +9,6 @@ public class main {
         libro3.getBook();
         libro3.returnBook();
         libro3.getBook();
-
         System.out.println("********************");
         libro1.showInfo();
         System.out.println("********************");

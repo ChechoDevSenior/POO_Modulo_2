@@ -15,5 +15,6 @@ public class main {
         estudiante2.esAprobado();
         estudiante3.esAprobado();
         System.out.println("**********************");
+        
     }
 }

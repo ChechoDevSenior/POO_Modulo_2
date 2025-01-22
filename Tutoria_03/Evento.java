@@ -44,7 +44,7 @@ public class Evento {
     public void MostrarDetalles(){
         System.out.println("Detalles del evento.");
         System.out.println("Nombre: "+this.nombre);
-        System.out.println("Ubicación: "´+this.ubicacion);
+        System.out.println("Ubicación: " +this.ubicacion);
         System.out.println("Fecha: "+this.fecha);
     }
 

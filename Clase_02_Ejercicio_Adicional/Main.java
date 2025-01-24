@@ -12,7 +12,7 @@ public class Main {
         System.out.println(carro1.mostrarDetalles());
         System.out.println(moto1.mostrarDetalles());
         System.out.println(moto1.equals(moto2));
-        System.out.println(moto1.equals(carro2));
+        System.out.println(carro1.equals(carro2));
     }
 }
 

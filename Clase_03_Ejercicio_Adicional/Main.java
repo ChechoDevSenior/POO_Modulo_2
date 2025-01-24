@@ -11,22 +11,19 @@ public class Main {
         metodosPago.add(new TarjetaCredito());
         metodosPago.add(new TarjetaRegalo());
         metodosPago.add(new TransferenciaBancaria());
-    }
 
+        // Simular el procesamiento de pagos
+        double[] montos = { 100, 5000, 25, 0.002, 200 };
+        for (int i = 0; i < metodosPago.size(); i++) {
+            MetodoPago metodo = metodosPago.get(i);
+            double monto = montos[i];
 
-        
-    // Simular el procesamiento de pagos
-    double[] montos = {100, 5000, 25, 0.002, 200}; 
-    for (int i = 0; i < metodosPago.size(); i++) {
-        MetodoPago metodo = metodosPago.get(i);
-        double monto = montos[i];
-
-        System.out.println(metodo.obtenerDetalles());
-        if (metodo.validarMonto(monto)) {
-            metodo.procesarPago(monto);
-        } else {
-            System.out.println("El monto " + monto + " no es válido para " + metodo.obtenerDetalles());
+            System.out.println(metodo.obtenerDetalles());
+            if (metodo.validarMonto(monto)) {
+                metodo.procesarPago(monto);
+            } else {
+                System.out.println("El monto " + monto + " no es válido para " + metodo.obtenerDetalles());
+            }
         }
     }
 }
-

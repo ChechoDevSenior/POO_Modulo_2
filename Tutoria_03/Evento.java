@@ -1,12 +1,12 @@
 package Tutoria_03;
 
 public class Evento {
-    String nombre;
-    String ubicacion;
-    String fecha;
+    private String nombre;
+    private String ubicacion;
+    private String fecha;
 
-    public Evento(){
-
+    public Evento() {
+        // Constructor vacío
     }
 
     public Evento(String nombre, String ubicacion, String fecha) {
@@ -15,38 +15,37 @@ public class Evento {
         this.fecha = fecha;
     }
 
-    //Getters and Setters
-    public void setNombre (String nombre){
+    // Getters y Setters
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getNombre(){
+    public String getNombre() {
         return this.nombre;
     }
 
-    public void setUbicacion(String ubicacion){
+    public void setUbicacion(String ubicacion) {
         this.ubicacion = ubicacion;
     }
 
-    public String getUbicacion (){
+    public String getUbicacion() {
         return this.ubicacion;
     }
 
-    public void setFecha (String fecha){
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
-    public String getFecha (){
+    public String getFecha() {
         return this.fecha;
     }
 
-
-    public void MostrarDetalles(){
-        System.out.println("Detalles del evento.");
-        System.out.println("Nombre: "+this.nombre);
-        System.out.println("Ubicación: " +this.ubicacion);
-        System.out.println("Fecha: "+this.fecha);
+    // Método para mostrar detalles
+    public void mostrarDetalles() {
+        System.out.println("Detalles del evento:");
+        System.out.println("Nombre: " + this.nombre);
+        System.out.println("Ubicación: " + this.ubicacion);
+        System.out.println("Fecha: " + this.fecha);
     }
-
-    
 }
+

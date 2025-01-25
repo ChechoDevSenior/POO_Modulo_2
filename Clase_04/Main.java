@@ -22,9 +22,9 @@ public class Main {
 
         Forma forma1 = FormaFactory.getForma(TipoForma.CIRCULO);
         forma1.dibujar();
-        Forma forma2 = FormaFactory.getForma(TipoForma.CIRCULO);
+        Forma forma2 = FormaFactory.getForma(TipoForma.RECTANGULO);
         forma2.dibujar();
-        Forma forma3 = FormaFactory.getForma(TipoForma.CIRCULO);
+        Forma forma3 = FormaFactory.getForma(TipoForma.TRIANGULO);
         forma3.dibujar();
 
         System.out.println(forma1 == forma2);

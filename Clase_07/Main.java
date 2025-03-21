@@ -1,7 +1,11 @@
 package Clase_07;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,5 +40,22 @@ public class Main {
             }
         };
         temporizador.schedule(myTimer, 0, 2000);
+
+        //Lambda
+        Operacion  suma = (x, y) -> x + y;
+        suma.ejecutar(10, 8);
+
+        Sumar sumaClase = new Sumar();
+        sumaClase.ejecutar(10, 8);
+
+        List<String> palabras = new ArrayList<>();
+
+        palabras.add("Hola");
+        palabras.add("¿Cómo estas?");
+        palabras.add("Chao");
+
+        List<String> filtradas = palabras.stream().filter(palabra -> palabra.endsWith("?")).collect(Collectors.toList());
     }
+
+    
 }
